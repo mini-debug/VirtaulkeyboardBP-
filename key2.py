@@ -64,7 +64,7 @@ while (cap.isOpened()):
         for button in StoredVar:
             x, y = button.pos
             w, h = button.size
- # The reasing of why were are getting those wacky numbers 
+ # The reason of why we were getting those wacky numbers 
             if x < lmList[8][0] < x + w and y < lmList[8][1] < y + h:
                 cv2.rectangle(img, (x - 5, y - 5), (x + w + 5, y + h + 5), (0, 0, 255), cv2.FILLED)
                 # Calculate the Euclidean distance between two hand landmarks (8 and 12)
